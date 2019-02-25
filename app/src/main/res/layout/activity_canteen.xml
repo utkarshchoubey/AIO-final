@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CanteenActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView1"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/dosa" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle1"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView1"
+                        android:text="Dosa"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView1"
+                        android:text="30"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger1"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger1"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sandwitch" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle2"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView2"
+                        android:text="Sandwitch"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle2"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView2"
+                        android:text="30"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice2"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger2"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger2"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/samosa" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle3"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView3"
+                        android:text="Samosa"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle3"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView3"
+                        android:text="20"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice3"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger3"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger3"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tea" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle4"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView4"
+                        android:text="Tea"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle4"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView4"
+                        android:text="10"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice4"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger4"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase4"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger4"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coldc" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle5"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView5"
+                        android:text="Cold Coffee"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle5"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView5"
+                        android:text="45"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice5"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease5"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger5"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase5"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger5"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cholebhature" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle6"
+                        android:layout_width="215dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView6"
+                        android:text="Chole Bhature"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle6"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView6"
+                        android:text="30"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice6"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease6"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger6"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase6"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger6"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/burger" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle7"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView7"
+                        android:text="Burger"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle7"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView7"
+                        android:text="40"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice7"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease7"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger7"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase7"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger7"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cofee" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle8"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView8"
+                        android:text="Coffee"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle8"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView8"
+                        android:text="20"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice8"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease8"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger8"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase8"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger8"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView9"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/whitesauce" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle9"
+                        android:layout_width="197dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView9"
+                        android:text="White Sauce"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle9"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView9"
+                        android:text="40"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice9"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease9"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger9"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase9"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger9"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView10"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/idli" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle10"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView10"
+                        android:text="Idli"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle10"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView10"
+                        android:text="30"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice10"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease10"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger10"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase10"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger10"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/maggie" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle11"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView11"
+                        android:text="Maggie"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle11"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView11"
+                        android:text="20"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice11"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease11"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger11"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase11"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger11"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/pasta" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle12"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView12"
+                        android:text="Pasta"
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle12"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView12"
+                        android:text="40"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice12"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease12"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger12"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase12"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger12"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView13"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/manchurian" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle13"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView13"
+                        android:text="Manchurian"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle13"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView13"
+                        android:text="40"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice13"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease13"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger13"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase13"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger13"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:elevation="5dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="120dp"
+                        android:layout_height="90dp"
+                        android:padding="4dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/vadapav" />
+
+                    <TextView
+                        android:id="@+id/textViewTitle14"
+                        android:layout_width="165dp"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageView14"
+                        android:text="Vad Pav"
+
+                        android:textColor="#000000"
+                        android:textSize="30sp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewPrice14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewTitle14"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@id/imageView14"
+                        android:text="40"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="56dp"
+                        android:layout_toRightOf="@id/textViewPrice14"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/decrease14"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="decreaseInteger14"
+                            android:text="-" />
+
+                        <TextView
+                            android:id="@+id/integer_number14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/increase14"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:onClick="increaseInteger14"
+                            android:text="+" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/showbtn"
+                android:layout_width="161dp"
+                android:layout_height="29dp"
+                android:background="@color/colorAccent"
+                android:text="Total amount" />
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+
+                android:id="@+id/placdorder"
+
+                />
+            <TextView
+                android:id="@+id/pricetotal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Price-"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
