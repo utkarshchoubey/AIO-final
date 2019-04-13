@@ -19,8 +19,6 @@ public class events extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_events);
-        ActionBar actionBar=getSupportActionBar();
-        actionBar.setTitle("Events");
         mRecyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true) ;
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));

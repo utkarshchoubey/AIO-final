@@ -6,13 +6,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
 
 public class CanteenActivity extends AppCompatActivity {
 
     int minteger1 = 0,minteger2 = 0,minteger3 = 0,minteger4 = 0,minteger5 = 0,minteger6 = 0,minteger7 = 0,minteger8 = 0,minteger9 = 0,minteger10 = 0,minteger11 = 0,minteger12 = 0,minteger13 = 0,minteger14 = 0;
     private Button btn;
-    private Button inc1;
-
+    private Button inc1,order;
+    private DatabaseReference mDatabaseReference;
     private TextView val1,val2,val3,val4,val5,val6,val7,val8,val9,val10,val11,val12,val13,val14;
     private TextView price1,price2,price3,price4,price5,price6,price7,price8,price9,price10,price11,price12,price13,price14,pricetotal;
     int price;
@@ -22,7 +25,14 @@ public class CanteenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_canteen);
 
+        order=(Button)findViewById(R.id.placeorder);
+        order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+               sendMessage();
+            }
+        });
         val1=(TextView)findViewById(R.id.integer_number1);
         price1=(TextView)findViewById(R.id.textViewPrice1);
 
@@ -97,10 +107,37 @@ public class CanteenActivity extends AppCompatActivity {
         display1(minteger1);
 
     }
+    private void sendMessage(){
+
+        String s="";
+        // TODO: Grab the text the user typed in and push the message to Firebase
+
+        if(val1.getText().toString()!="0"){
+            s+="Dosa "+val1.getText().toString()+" ,";
+        }
+        if(val2.getText().toString()!="0"){
+            s+="Sandwitch "+val2.getText().toString()+" ,";
+        }
+        if(val3.getText().toString()!="0"){
+            s+="Samosa "+val3.getText().toString()+", ";
+        }
+        if(val4.getText().toString()!="0"){
+            s+="Tea "+val4.getText().toString()+" ,";
+        }
+        if(val5.getText().toString()!="0"){
+            s+="ColdCoffee "+val5.getText().toString()+" ";
+        }
+        Toast.makeText(CanteenActivity.this,"Order Placed" + s,Toast.LENGTH_SHORT).show();
+
+
+
+
+    }
     public void decreaseInteger1(View view) {
         minteger1 = minteger1 - 1;
         display1(minteger1);
     }
+
     private void display1(int number) {
         TextView displayInteger = (TextView) findViewById(
                 R.id.integer_number1);
@@ -224,7 +261,7 @@ public class CanteenActivity extends AppCompatActivity {
     }
     public void increaseInteger11(View view) {
         minteger11 = minteger11 + 1;
-        display10(minteger11
+        display11(minteger11
         );
     }public void decreaseInteger11(View view) {
         minteger11 = minteger11 - 1;

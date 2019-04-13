@@ -19,7 +19,7 @@ public class mainscreen extends AppCompatActivity {
 
     //view objects
     private TextView textViewUserEmail;
-    private Button buttonLogout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,23 +42,12 @@ public class mainscreen extends AppCompatActivity {
 
         //initializing views
         textViewUserEmail = (TextView) findViewById(R.id.textViewUserEmail);
-        buttonLogout = (Button) findViewById(R.id.buttonLogout);
 
         //displaying logged in user name
-        textViewUserEmail.setText("Welcome "+user.getEmail());
+        textViewUserEmail.setText(user.getEmail());
 
         //adding listener to button
-        buttonLogout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //logging out the user
-                firebaseAuth.signOut();
-                //closing activity
-                finish();
-                //starting login activity
-                startActivity(new Intent(mainscreen.this, Main2Activity.class));
-            }
-        });
+
 
 
 
@@ -89,6 +78,17 @@ public class mainscreen extends AppCompatActivity {
                     if(finali==4){
                         Intent intent=new Intent(mainscreen.this,MainChatActivity.class);
                         startActivity(intent);
+                    }
+                    if(finali==2){
+                        Intent intent=new Intent(mainscreen.this,MainChatActivity.class);
+                        startActivity(intent);
+                    }
+                    if(finali==5){
+                        firebaseAuth.signOut();
+                        //closing activity
+                        finish();
+                        //starting login activity
+                        startActivity(new Intent(mainscreen.this, Main2Activity.class));
                     }
                 }
             });

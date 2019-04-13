@@ -23,8 +23,7 @@ public class lostfound extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lostfound);
 
-        ActionBar actionBar=getSupportActionBar();
-        actionBar.setTitle("Lost n Found");
+
         mRecyclerView=(RecyclerView)findViewById(R.id.recyclerView);
         mRecyclerView.setHasFixedSize(true) ;
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
